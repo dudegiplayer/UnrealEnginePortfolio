@@ -1,0 +1,5 @@
+,Damage,Montage,PlayRatio,CanMove,Sound,ShakeClass,Effect,EffectLocation,EffectScale,HitStop,Launch
+1,5,AnimMontage'/Game/Character/Montages/Common/HitReaction_Montage.HitReaction_Montage',1,FALSE,,,ParticleSystem'/Game/Effects/P_ky_hit_fire.P_ky_hit_fire',"(X=0,Y=0,Z=0)","(X=1,Y=1,Z=1)",0.05,700
+2,10,AnimMontage'/Game/Character/Montages/Common/HitReaction_Montage.HitReaction_Montage',1,FALSE,,,ParticleSystem'/Game/Effects/P_ky_hit_fire.P_ky_hit_fire',"(X=0,Y=0,Z=0)","(X=1,Y=1,Z=1)",0.075,700
+3,15,AnimMontage'/Game/Character/Montages/Common/HitReaction_Montage.HitReaction_Montage',1,FALSE,,,ParticleSystem'/Game/Effects/P_ky_hit_fire.P_ky_hit_fire',"(X=0,Y=0,Z=0)","(X=1,Y=1,Z=1)",0.1,1000
+4,20,AnimMontage'/Game/Character/Montages/Common/HitReaction_Montage.HitReaction_Montage',1,FALSE,,,ParticleSystem'/Game/Effects/P_ky_hit_fire.P_ky_hit_fire',"(X=0,Y=0,Z=0)","(X=1,Y=1,Z=1)",0.1,100
