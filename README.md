@@ -1,1 +1,1 @@
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/cL6MY6CVErk" title="UE Portfolio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Video Label](http://img.youtube.com/vi/cL6MY6CVErk/0.jpg)](https://youtu.be/cL6MY6CVErk)
