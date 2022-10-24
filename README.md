@@ -128,7 +128,23 @@
 * SkySphere
 * Landscape
     + Procedural Foliage
+        - Procedural Foliage Spawner
+            - Tree/Grass
+                - LOD
+                - Material
+                    - MaterialParameterCollection
+                    - Perlin Noise
+                    - Material Instance
+                    - Material Function
+                    
+        -> Instancing Pattern
+        -> FlyWeigh Pattern
+        
     + Landscape Material
+        - World Displacement
     + Landscape Layering
+        - Physical Material
+        -> Texture Splatting
+        
     + World machine
     + NavMeshVolume
