@@ -10,7 +10,11 @@ UCLASS()
 class U2202_02_API ACWeapon : public AActor
 {
 	GENERATED_BODY()
-	
+
+
+	UPROPERTY(EditAnywhere)
+		ACharacter* OwnerCharacter;
+		
 public:	
 	// Sets default values for this actor's properties
 	ACWeapon();
