@@ -79,15 +79,56 @@
 
 
 * Enemy Character 
+    + 공통
+        - Behavior Tree
+        - AIController
+        - NaviMesh
     + Normal Enemy
     + Boss
+       - EQS
+       - MovementMode::Fly
+    
 
 * 공통 요소
     + Interface
+        - Damage
     + Animation
+        - Animation Blending
+        - Animation Layering
+        - Animation Montage
+        - Inverse Kinematics
+        - BoneTransform
+        - BlendSpace
+        - Anim Notify/Anim Notify State
+        - Animation Retargeting
+        - CashPose
+        - RootMotion
+        - Addictive Animation
     + Sound
+        - Sound Queue
+            - Attenuation
     + Particle
+        - Particle System
+        - Niagara Particle System
     + Component Based Development
+        - Weapon
+        - Targeting
+        - Vihicle
+        - WebShooting
+        - Sneak
+        - Parkour
+        - MiniMap
+        -> Decoupling Pattern
 
 맵
 =============
+
+* LevelStreaming
+    + Asynchronous Loading
+* SkySphere
+* Landscape
+    + Procedural Foliage
+    + Landscape Material
+    + Landscape Layering
+    + World machine
+    + NavMeshVolume
