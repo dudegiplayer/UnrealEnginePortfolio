@@ -11,5 +11,7 @@
 
 캐릭터
 =============
-<ol> 플레이어 캐릭터
- <ol> 적 캐릭터
+## Player Character
+## Enemy Character 
+### Normal Enemy
+### Boss
