@@ -12,6 +12,8 @@
 캐릭터
 =============
 * Player Character
+    + Movement
+       - 캐릭터 이동시 자연스러운 이동을 위하여 Character Movement의 가속/감속 이용.
 * Enemy Character 
     + Normal Enemy
     + Boss
