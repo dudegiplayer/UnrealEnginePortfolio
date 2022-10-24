@@ -14,6 +14,15 @@
 * Player Character
     + Movement
        - 캐릭터 이동시 자연스러운 이동을 위하여 Character Movement의 가속/감속 이용.
+           - Character Movement :: MaxAcceleration -> 500으로 조정.
+           - UseSeperateBreakingFriction -> true
+           - CharacterMovement:Walking -> MaxStepHeight -> 100
+           - Walkable Floor Angle -> 70
+
+           -> 캐릭터 이동시 가속/감속 적용, 자연스러운 움직임 구현.
+    + Event Dispatcher
+       - Onlanded
+       - OnHitted
 * Enemy Character 
     + Normal Enemy
     + Boss
