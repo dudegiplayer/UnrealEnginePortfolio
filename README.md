@@ -34,29 +34,29 @@
     + Camera
         - Camera PostProcess
             - Vigntte
-                   - 은신, 일부 무기의 조준시 해당 효과 적용하여 몰입감 부여.                   
+              - 은신, 일부 무기의 조준시 해당 효과 적용하여 몰입감 부여.                   
             - DepthOfField
-                   - 일부 무기의 조준시 조준하고 있는 타겟에게 초점 부여, 그 외의 영역은 약간의 Blur 처리.
-                   - 해당 기능 활성화시 플레이어 카메라 기준 정면으로 LineTrace, 해당 반환값 중 Distance를 활용하여 DepthOfField 수치 조정.
-                   - 충돌되는 Actor가 없는 경우 기본 DOF 수치 이용.
+              - 일부 무기의 조준시 조준하고 있는 타겟에게 초점 부여, 그 외의 영역은 약간의 Blur 처리.
+              - 해당 기능 활성화시 플레이어 카메라 기준 정면으로 LineTrace, 해당 반환값 중 Distance를 활용하여 DepthOfField 수치 조정.
+              - 충돌되는 Actor가 없는 경우 기본 DOF 수치 이용.
         - SpringArm
              - Use Pawn Control Rotation 변수 활용.
-                    - 무기에 따라 카메라 Rotation과 캐릭터 Rotation을 일치시켜 캐릭터 회전 구현.
-                    - 해당 옵션을 활성화 한 무기들의 경우 카메라의 방향과 캐릭터 전방방향이 일치 -> 마우스와 플레이어 방향 일치.
-                    - 해당 옵션을 비활성화 한 무기들의 경우 카메라의 방향과 캐릭터 전방방향 일치 -> 카메라와 플레이어 방향 독립적으로 이동.
+              - 무기에 따라 카메라 Rotation과 캐릭터 Rotation을 일치시켜 캐릭터 회전 구현.
+              - 해당 옵션을 활성화 한 무기들의 경우 카메라의 방향과 캐릭터 전방방향이 일치 -> 마우스와 플레이어 방향 일치.
+              - 해당 옵션을 비활성화 한 무기들의 경우 카메라의 방향과 캐릭터 전방방향 일치 -> 카메라와 플레이어 방향 독립적으로 이동.
              - Enable Camera Lag 변수 활용.
-                    - 카메라 회전시 자연스러운 이동.
+              - 카메라 회전시 자연스러운 이동.
              - 마우스 휠 입력을 통해 Target Arm Length 변경.
-                    - 최대/최소값, Interp Speed는  구조체로 정의하여 설정.
-                    - FInterpTo함수 이용하여 Target Arm Length 변수 부드럽게 변경.
-                    - 매개변수로는 GetWorldDeltaSeconds할당.
+              - 최대/최소값, Interp Speed는  구조체로 정의하여 설정.
+              - FInterpTo함수 이용하여 Target Arm Length 변수 부드럽게 변경.
+              - 매개변수로는 GetWorldDeltaSeconds할당.
                     
 
     + UI
         - 공통
-               - Overlay 이용하여 모니터 크기와 무관하게 일정 비율의 위치에 출력되도록 함.  
-               - Border 이용하여 아이콘의 BackGround 구현.
-               - 필요한 경우 Grid 활용하여 정렬.
+         - Overlay 이용하여 모니터 크기와 무관하게 일정 비율의 위치에 출력되도록 함.  
+         - Border 이용하여 아이콘의 BackGround 구현.
+         - 필요한 경우 Grid 활용하여 정렬.
         - Player HP/MP/Stamina Bar
                - Tick Event마다 플레이어의 HP/MP/Stamina 수치를 불러와서 적용.(캐릭터의 LifeComponent 내부에 해당 변수들 정의.)
                - DynamicMaterial 이용하여 UI의 구슬 채워진 정도 조절.
