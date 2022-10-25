@@ -11,7 +11,7 @@
 
 캐릭터
 =============
-* Player Character
+ ## Player Character
     + Movement
        - 캐릭터 이동시 자연스러운 이동을 위하여 Character Movement의 가속/감속 이용.
            - Character Movement :: MaxAcceleration -> 500으로 조정.
@@ -81,8 +81,8 @@
              - 현재는 로직 스레드에서 맵 이동.
              - Level Streaming 이용하여 비동기 로딩 구현 진행.
              
-
-* Enemy Character 
+             
+   ## Enemy Character
     + 공통
         - Behavior Tree
             - BlackBoard
@@ -105,7 +105,7 @@
        - BehaviorTree SimpleParallel          
     
 
-* 공통 요소
+## 공통 요소
     + Interface
         - Damage
             - 플레이어가 공격시 무기와 Overlap Event 발생한 Actor에 Damage 인터페이스 이용하여 전달.
