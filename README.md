@@ -12,7 +12,7 @@
 캐릭터
 =============
  ## Player Character
-    ### Movement
+    + Movement
        - 캐릭터 이동시 자연스러운 이동을 위하여 Character Movement의 가속/감속 이용.
            - Character Movement :: MaxAcceleration -> 500으로 조정.
            - UseSeperateBreakingFriction -> true
@@ -117,17 +117,38 @@
                 - Blend In/Out에 따라 기존 애니메이션과 변경될 애니메이션의 보간이 일어나 부드러운 애니메이션 변경이 이루어짐.
         - Animation Layering
             - Locomotion
+                 - 기본적인 캐릭터 움직임.
+                 - 각 무기에 따른 BlendSpace 선택 후, 해당 모션 출력.
             - Hand
+                 - 캐릭터의 Hand IK 목적.
+                 - 2 Bone IK
             - Feet
+                 - 캐릭터의 Foot IK 목적.
+                 - 2 Bone IK
+                 - 플레이어의 (Foot Bone.x, Foot Bone.y, Pelvis.z) 에서 (0, 0, -1) 방향으로 Linetrace, 길이는 Character의 Half Collision
+                 - 두 값의 차를 구하여 해당 값만큼 Foot 이동.
             - Bow
                
         - Animation Montage
             - Montage Section
+                 - 몽타주의 구간을 분할.
+                 - 필요에 따라 특정 구간 루프 기능 가능.
+                 - 지속 공격등 구현시 지속될 구간 Looping하여 구현하였으며, 종료시 해당 loop 탈출 하는 방식으로 구현.
             - Anim Slot Manager
+                 - 크게 Upper Body/Full Body 로 나뉘어짐.
+                 - Upper Body 는 Bone Blend 이용하여 상체에만 영향을 미치도록 구현.
+                 - FullBody는 전체 구조에 영향을 미치도록 구현.
+                 - Locomotion -> Upper Body -> Full Body 순으로 영향을 미침.
         - Inverse Kinematics
             - Two Bone IK
             - Anim Curve
+                 - Foot IK 구현시 전 구간 IK를 적용하면 캐릭터의 발이 과도하게 바닥에 붙어 있는 현상 발생.
+                 - Anim Curve 이용하여 애니메이션의 특정 구간에만 IK가 적용되도록 구현.
         - Bone Transform
+                 - 플레이어 캐릭터의 카메라 Rotation과 플레이어 캐릭터의 Bone(Neck) Rotation을 일치시킴.
+                     -> 플레이어가 바라보는 방향을 캐릭터도 바라보게 구현.
+                 - 카메라의 위치가 플레이어의 전방에 존재하는 경우 플레이어가 카메라를 바라보도록 구현.
+                     -> 외적을 이용하여 전/후방 구분.
         - BlendSpace
             - Aim Offset
             - 1D/2D           
