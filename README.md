@@ -12,7 +12,7 @@
 캐릭터
 =============
  ## Player Character
-    + Movement
+    ### Movement
        - 캐릭터 이동시 자연스러운 이동을 위하여 Character Movement의 가속/감속 이용.
            - Character Movement :: MaxAcceleration -> 500으로 조정.
            - UseSeperateBreakingFriction -> true
