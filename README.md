@@ -63,7 +63,7 @@
              - 최대 수치/현재 수치 TextBar 이용하여 설정.
         - Boss HPBar
              - 해당 클래스에 매개변수로 출력할 적 클래스 변수 정의.
-             - 해당 UI가 생성될 때 현재 맵에 존재하는 적 클래스 변수 액터의 HP 수치를 불러와 적용.(보스 캐릭터 기준이므로 한개의 스폰된 객체 존재한다 가정, 해당 Boss의 LifeComopnent 내부에 해당 변수 정의.)
+             - 해당 UI가 생성될 때 현재 맵에 존재하는 적 클래스 변수 액터의 HP 수치를 불러와 적용.(보스 캐릭터 기준이므로 한개의 스폰된 객체 존재한다 가정, 해당 Boss의                          LifeComopnent 내부에 해당 변수 정의.)
              - Progress Bar 이용하여 보스 몬스터 체력 표기.
              - Set Timer By Event 이용하여 보스 몬스터 체력 갱신.
         - Aim
@@ -76,7 +76,11 @@
              - 무기 아이콘 바깥으로 마우스 이동시 OnUnhorvered 이벤트 발생 -> 해당 아이콘 Background BrushColor 색상 변경하여 효과 부여.
              - 변경할 무기 선택시 게임 플레이 재개, UI창 소멸.
         - Warp
-
+             - 구조물에 접촉시 OpenLevel 이용하여 레벨 오픈.
+             - UI창 이용하여 Fade In/Out 구현. (Timeline 이용하여 Alpha 값 조정.)
+             - 현재는 로직 스레드에서 맵 이동.
+             - Level Streaming 이용하여 비동기 로딩 구현 진행.
+             
 
 * Enemy Character 
     + 공통
@@ -86,26 +90,40 @@
             - BehaviorTree Decorator
             - BehaivorTree Sequence
             - BehaviorTree Selector
-            - BehaviorTree SimpleParallel          
+           
         - AIController
             - AI Perception
+                - Sight
+                - Hearing
         - NaviMesh
     + Normal Enemy
     + Boss
        - EQS
+            - 공격 진행시 EQS 활용하여 적절한 위치 산출 후, 해당 위치로 이동하면서 공격.
        - MovementMode::Fly
+            - 
+       - BehaviorTree SimpleParallel          
     
 
 * 공통 요소
     + Interface
         - Damage
+            - 플레이어가 공격시 무기와 Overlap Event 발생한 Actor에 Damage 인터페이스 이용하여 전달.
+            - 인터페이스가 구현되지 않은 액터는 무시됨.
     + Animation
         - Animation Blending
             - Blend In/Out
+                - 애니메이션 Blending이 없는 경우 애니메이션 변경간 특정 시점을 기준으로 애니메이션이 끊겨서 변경되는것으로 보임.
+                - Blend In/Out에 따라 기존 애니메이션과 변경될 애니메이션의 보간이 일어나 부드러운 애니메이션 변경이 이루어짐.
         - Animation Layering
-            - Anim Slot Manager
+            - Locomotion
+            - Hand
+            - Feet
+            - Bow
+               
         - Animation Montage
             - Montage Section
+            - Anim Slot Manager
         - Inverse Kinematics
             - Two Bone IK
             - Anim Curve
