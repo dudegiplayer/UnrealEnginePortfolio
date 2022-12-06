@@ -4,6 +4,8 @@
 
 [Portfolio Video](https://youtu.be/cL6MY6CVErk){:target="_blank"}
 
+# link define
+[Google]: http://google.com/ 
 
 프로젝트 소개
 =============
