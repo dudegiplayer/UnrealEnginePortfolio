@@ -3,6 +3,11 @@
 [![Video Label](http://img.youtube.com/vi/cL6MY6CVErk/0.jpg)](https://youtu.be/cL6MY6CVErk)
 
 
+[VidelLabel](https://youtu.be/cL6MY6CVErk){: target="_blank"}
+<https://youtu.be/cL6MY6CVErk>{: target="_blank"}
+<a href="https://youtu.be/cL6MY6CVErk" target="_blank">example</a>
+
+
 프로젝트 소개
 =============
 
