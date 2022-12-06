@@ -2,13 +2,7 @@
 =============
 [![Video Label](http://img.youtube.com/vi/cL6MY6CVErk/0.jpg)](https://youtu.be/cL6MY6CVErk){:target="_blank"}
 
-[Portfolio Video](https://youtu.be/cL6MY6CVErk){:target="_blank"}
 
-[Google][]
-
-
-# link define
-[Google]: http://google.com/ 
 프로젝트 소개
 =============
 
