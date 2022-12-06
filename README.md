@@ -2,7 +2,7 @@
 =============
 [![Video Label](http://img.youtube.com/vi/cL6MY6CVErk/0.jpg)](https://youtu.be/cL6MY6CVErk)
 
-동영상 링크: [[UE4 BP_Portfolio Final]](https://youtu.be/cL6MY6CVErk)
+동영상 링크: [[![Video Label](http://img.youtube.com/vi/cL6MY6CVErk/0.jpg)]](https://youtu.be/cL6MY6CVErk)
 
 
 프로젝트 소개
