@@ -3,7 +3,7 @@
 [![Video Label](http://img.youtube.com/vi/cL6MY6CVErk/0.jpg)](https://youtu.be/cL6MY6CVErk)
 
 
-[새 탭에서 열기](https://www.google.com/){:target="_blank"}
+[새 탭에서 열기](https://www.google.com/{:target="_blank"})
 
 프로젝트 소개
 =============
